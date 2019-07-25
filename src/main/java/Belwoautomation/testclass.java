@@ -25,9 +25,8 @@ public class testclass {
 		test.addkey1();
 		test.addkey2();
 		test.addkey3();
-
 		test.addkey();
-		test.check_added_key();
+		//test.check_added_key();
 		test.logout();
 	}
 
@@ -46,6 +45,11 @@ public class testclass {
 		} else {
 			System.out.println("User not login");
 		}
+		
+
+	}
+
+	public void addkey() throws InterruptedException {
 		driver.findElement(By.linkText("Message & Inserts")).click();
 		driver.findElement(By.linkText("Message & Insert Configuration")).click();
 		int size_ofnevtop = driver.findElements(By.xpath("//*[@class=\"nav nav-tabs\"]/li")).size();
@@ -53,10 +57,6 @@ public class testclass {
 		if (size_ofnevtop == 3) {
 			System.out.println("Test cases is passed");
 		}
-
-	}
-
-	public void addkey() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.id("AddKey")).click();
 		Thread.sleep(1000);
