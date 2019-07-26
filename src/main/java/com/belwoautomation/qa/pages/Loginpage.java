@@ -29,12 +29,12 @@ public class Loginpage extends Testbase{
 		return driver.getTitle();
 	}
 	
-	public Homepage login(String un, String pass)
+	public addclient_obj login(String un, String pass)
 	{
 		username.sendKeys(un);
 		Password.sendKeys(pass);
 		Login_button.click();
-		return new Homepage();
+		return new addclient_obj();
 		
 	}
 }

@@ -7,32 +7,28 @@ import com.belwoautomation.qa.base.Testbase;
 import com.belwoautomation.qa.pages.Loginpage;
 import com.belwoautomation.qa.pages.addclient_obj;
 
-import junit.framework.Assert;
-
-public class Loginpagetest extends Testbase {
-
-	Loginpage loginpage;
+public class addclient extends Testbase{
+	
 	addclient_obj addclient;
-
-	public Loginpagetest() {
+	
+	public addclient()
+	{
 		super();
 	}
-
 	@BeforeMethod
 	public void setUp() {
 
 		initialization();
 
-		loginpage = new Loginpage();
+		addclient= new addclient_obj();
+		Loginpage login=new Loginpage();
+		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
+	
 	@Test
-	public void loginPageTitleTest() {
-
+	public void addcliet()
+	{
+		addclient.addclient("testbelwo123", "test321");
 	}
 
-	@Test
-	public void logintest() {
-		addclient = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
 }
