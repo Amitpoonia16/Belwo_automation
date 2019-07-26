@@ -13,7 +13,7 @@ import com.belwoautomation.qa.util.TestUtil;
 
 public class Testbase {
 	public static WebDriver driver;
-	static Properties prop;
+	public static Properties prop;
 
 	public Testbase() {
 		try {
@@ -29,11 +29,16 @@ public class Testbase {
 	}
 
 	public static void initialization() {
+
 		String browserName = prop.getProperty("browser");
-		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-			driver = new ChromeDriver();
-		}
+
+		// if (browserName.contentEquals("chrome")) {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+
+		driver = new ChromeDriver();
+
+		// }
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.Page_load_Timeout, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.Page_load_Timeout, TimeUnit.SECONDS);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Belwoautomation.addclient">
+      <class name="Belwoautomation.Loginpagetest">
         <methods>
-          <include name="login_before"/>
-          <include name="logout"/>
-          <include name="addclient1"/>
+          <include name="loginPageTitleTest"/>
+          <include name="logintest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Belwoautomation.addclient -->
+      </class> <!-- Belwoautomation.Loginpagetest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

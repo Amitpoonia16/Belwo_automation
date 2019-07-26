@@ -24,4 +24,17 @@ public class Loginpage extends Testbase{
 	}
 	
 	//Actions:
+	public String validateLoginPageTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	public Homepage login(String un, String pass)
+	{
+		username.sendKeys(un);
+		Password.sendKeys(pass);
+		Login_button.click();
+		return new Homepage();
+		
+	}
 }
