@@ -6,37 +6,38 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.belwoautomation.qa.base.Testbase;
+import com.belwoautomation.qa.pages.Applications_obj;
 import com.belwoautomation.qa.pages.Loginpage;
 import com.belwoautomation.qa.pages.addclient_obj;
 
-import junit.framework.Assert;
+public class Applications extends Testbase{
 
-public class Loginpagetest extends Testbase {
-
-	Loginpage loginpage;
-	addclient_obj addclient;
-
-	public Loginpagetest() {
+	Applications_obj applicationobj;
+	Loginpage login;
+	public Applications()
+	{
 		super();
 	}
-
 	@BeforeMethod
 	public void setUp() {
 
 		initialization();
 
-		loginpage = new Loginpage();
+		applicationobj= new Applications_obj();
+		 login=new Loginpage();
+		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
+	
 	@Test
-	public void logintest() {
-		addclient = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+	public void add_app()
+	{
+		applicationobj.Add_app("added by automation6");
 	}
 	
 	@AfterMethod
 	public void logout()
 	{
-		addclient =loginpage.logout1();
+		login.logout();
 	}
 	
 	@AfterClass
@@ -44,4 +45,5 @@ public class Loginpagetest extends Testbase {
 	{
 		driver.close();
 	}
+	
 }

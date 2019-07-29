@@ -1,21 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-26T21:24:49Z" name="Default suite" finished-at="2019-07-26T21:25:09Z" duration-ms="19522">
+  <suite started-at="2019-07-29T21:19:28Z" name="Suite" finished-at="2019-07-29T21:20:16Z" duration-ms="47535">
     <groups>
     </groups>
-    <test started-at="2019-07-26T21:24:49Z" name="Default test" finished-at="2019-07-26T21:25:09Z" duration-ms="19522">
-      <class name="Belwoautomation.addclient">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Belwoautomation.addclient@5db45159]" started-at="2019-07-26T21:24:49Z" name="setUp" finished-at="2019-07-26T21:25:04Z" duration-ms="14302" status="PASS">
+    <test started-at="2019-07-29T21:19:28Z" name="Test" finished-at="2019-07-29T21:20:16Z" duration-ms="47535">
+      <class name="Belwoautomation.Loginpagetest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Belwoautomation.Loginpagetest@5e4c8041]" started-at="2019-07-29T21:19:28Z" name="setUp" finished-at="2019-07-29T21:19:36Z" duration-ms="8168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addcliet()[pri:0, instance:Belwoautomation.addclient@5db45159]" started-at="2019-07-26T21:25:04Z" name="addcliet" finished-at="2019-07-26T21:25:09Z" duration-ms="5182" status="PASS">
+        <test-method signature="logintest()[pri:0, instance:Belwoautomation.Loginpagetest@5e4c8041]" started-at="2019-07-29T21:19:36Z" name="logintest" finished-at="2019-07-29T21:19:40Z" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.Loginpagetest@5e4c8041]" started-at="2019-07-29T21:19:40Z" name="logout" finished-at="2019-07-29T21:19:41Z" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:Belwoautomation.Loginpagetest@5e4c8041]" started-at="2019-07-29T21:19:41Z" name="closewindow" finished-at="2019-07-29T21:19:41Z" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closewindow -->
+      </class> <!-- Belwoautomation.Loginpagetest -->
+      <class name="Belwoautomation.Applications">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Belwoautomation.Applications@19d37183]" started-at="2019-07-29T21:19:59Z" name="setUp" finished-at="2019-07-29T21:20:09Z" duration-ms="10545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="add_app()[pri:0, instance:Belwoautomation.Applications@19d37183]" started-at="2019-07-29T21:20:09Z" name="add_app" finished-at="2019-07-29T21:20:14Z" duration-ms="4969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_app -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.Applications@19d37183]" started-at="2019-07-29T21:20:14Z" name="logout" finished-at="2019-07-29T21:20:16Z" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:Belwoautomation.Applications@19d37183]" started-at="2019-07-29T21:20:16Z" name="closewindow" finished-at="2019-07-29T21:20:16Z" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closewindow -->
+      </class> <!-- Belwoautomation.Applications -->
+      <class name="Belwoautomation.addclient">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Belwoautomation.addclient@71c8becc]" started-at="2019-07-29T21:19:41Z" name="setUp" finished-at="2019-07-29T21:19:53Z" duration-ms="11509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcliet()[pri:0, instance:Belwoautomation.addclient@71c8becc]" started-at="2019-07-29T21:19:53Z" name="addcliet" finished-at="2019-07-29T21:19:58Z" duration-ms="5053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcliet -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.addclient@71c8becc]" started-at="2019-07-29T21:19:58Z" name="logout" finished-at="2019-07-29T21:19:59Z" duration-ms="1059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:Belwoautomation.addclient@71c8becc]" started-at="2019-07-29T21:19:59Z" name="closewindow" finished-at="2019-07-29T21:19:59Z" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closewindow -->
       </class> <!-- Belwoautomation.addclient -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

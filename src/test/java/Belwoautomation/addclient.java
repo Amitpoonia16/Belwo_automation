@@ -1,5 +1,7 @@
 package Belwoautomation;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,7 @@ import com.belwoautomation.qa.pages.addclient_obj;
 public class addclient extends Testbase{
 	
 	addclient_obj addclient;
+	Loginpage login;
 	
 	public addclient()
 	{
@@ -21,7 +24,7 @@ public class addclient extends Testbase{
 		initialization();
 
 		addclient= new addclient_obj();
-		Loginpage login=new Loginpage();
+		 login=new Loginpage();
 		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
@@ -29,6 +32,17 @@ public class addclient extends Testbase{
 	public void addcliet()
 	{
 		addclient.addclient("testbelwo123", "test321");
+	}
+	
+	@AfterMethod
+	public void logout()
+	{
+		login.logout();
+	}
+	@AfterClass
+	public void closewindow()
+	{
+		driver.close();
 	}
 
 }

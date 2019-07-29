@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Belwoautomation.homepage">
+      <class name="Belwoautomation.addclient">
         <methods>
-          <include name="addcliet"/>
           <include name="setUp"/>
+          <include name="addcliet"/>
         </methods>
-      </class> <!-- Belwoautomation.homepage -->
+      </class> <!-- Belwoautomation.addclient -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
