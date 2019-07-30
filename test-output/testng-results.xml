@@ -1,53 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-30T18:18:33Z" name="Default suite" finished-at="2019-07-30T18:19:31Z" duration-ms="57285">
+  <suite started-at="2019-07-30T19:45:54Z" name="Default suite" finished-at="2019-07-30T19:46:14Z" duration-ms="19292">
     <groups>
     </groups>
-    <test started-at="2019-07-30T18:18:33Z" name="Default test" finished-at="2019-07-30T18:19:31Z" duration-ms="57285">
-      <class name="Belwoautomation.app_actions_testcase">
-        <test-method is-config="true" signature="login()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:18:33Z" name="login" finished-at="2019-07-30T18:18:49Z" duration-ms="16025" status="PASS">
+    <test started-at="2019-07-30T19:45:54Z" name="Default test" finished-at="2019-07-30T19:46:14Z" duration-ms="19292">
+      <class name="Belwoautomation.Applications">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Belwoautomation.Applications@327b636c]" started-at="2019-07-30T19:45:54Z" name="setUp" finished-at="2019-07-30T19:46:07Z" duration-ms="13011" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="appclone()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:18:49Z" name="appclone" finished-at="2019-07-30T18:18:53Z" duration-ms="3837" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="add_app()[pri:0, instance:Belwoautomation.Applications@327b636c]" started-at="2019-07-30T19:46:07Z" name="add_app" finished-at="2019-07-30T19:46:12Z" duration-ms="5022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appclone -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:18:53Z" name="logout" finished-at="2019-07-30T18:18:53Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:18:53Z" name="login" finished-at="2019-07-30T18:19:08Z" duration-ms="14590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="deleteapp()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:08Z" name="deleteapp" finished-at="2019-07-30T18:19:10Z" duration-ms="2602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteapp -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:10Z" name="logout" finished-at="2019-07-30T18:19:10Z" duration-ms="0" status="PASS">
+        </test-method> <!-- add_app -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.Applications@327b636c]" started-at="2019-07-30T19:46:12Z" name="logout" finished-at="2019-07-30T19:46:13Z" duration-ms="1019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:10Z" name="login" finished-at="2019-07-30T18:19:25Z" duration-ms="14438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="editapp()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:25Z" name="editapp" finished-at="2019-07-30T18:19:30Z" duration-ms="5543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editapp -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:30Z" name="logout" finished-at="2019-07-30T18:19:30Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:Belwoautomation.app_actions_testcase@60611244]" started-at="2019-07-30T18:19:30Z" name="closewindow" finished-at="2019-07-30T18:19:31Z" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:Belwoautomation.Applications@327b636c]" started-at="2019-07-30T19:46:13Z" name="closewindow" finished-at="2019-07-30T19:46:14Z" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->
-      </class> <!-- Belwoautomation.app_actions_testcase -->
+      </class> <!-- Belwoautomation.Applications -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

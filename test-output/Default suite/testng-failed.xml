@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Belwoautomation.app_actions_testcase">
+      <class name="Belwoautomation.Applications">
         <methods>
-          <include name="editapp"/>
-          <include name="login"/>
+          <include name="add_app"/>
+          <include name="setUp"/>
           <include name="closewindow"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- Belwoautomation.app_actions_testcase -->
+      </class> <!-- Belwoautomation.Applications -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

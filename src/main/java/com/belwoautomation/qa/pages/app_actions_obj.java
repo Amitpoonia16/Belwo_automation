@@ -77,7 +77,9 @@ public class app_actions_obj extends Testbase {
 	public app_actions_obj delete_app() {
 		setting_link.click();
 		application_link.click();
+
 		deleteapp.click();
+
 		okButton.click();
 		return new app_actions_obj();
 	}
@@ -90,15 +92,15 @@ public class app_actions_obj extends Testbase {
 
 		Select sel_client = new Select(ClientId_dropdown);
 		sel_client.selectByVisibleText("Belwo Client");
-		
+
 		AppName.sendKeys(appName);
-		
+
 		Select processing_Type = new Select(ProcessingType);
 		processing_Type.selectByIndex(2);
-		
+
 		Select sLA = new Select(SLA);
 		sLA.selectByIndex(2);
-		
+
 		Save_button.click();
 		return new app_actions_obj();
 	}

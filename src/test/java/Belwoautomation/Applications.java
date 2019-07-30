@@ -10,40 +10,40 @@ import com.belwoautomation.qa.pages.Applications_obj;
 import com.belwoautomation.qa.pages.Loginpage;
 import com.belwoautomation.qa.pages.addclient_obj;
 
-public class Applications extends Testbase{
+public class Applications extends Testbase {
 
 	Applications_obj applicationobj;
 	Loginpage login;
-	public Applications()
-	{
+
+	public Applications() {
 		super();
 	}
+
 	@BeforeMethod
 	public void setUp() {
 
 		initialization();
 
-		applicationobj= new Applications_obj();
-		 login=new Loginpage();
+		applicationobj = new Applications_obj();
+		login = new Loginpage();
 		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-	
+
 	@Test
-	public void add_app()
-	{
-		applicationobj.Add_app("added by automation10");
+	public void add_app() {
+
+		applicationobj.Add_app("test.belwo1");
+
 	}
-	
+
 	@AfterMethod
-	public void logout()
-	{
+	public void logout() {
 		login.logout();
 	}
-	
+
 	@AfterClass
-	public void closewindow()
-	{
+	public void closewindow() {
 		driver.close();
 	}
-	
+
 }

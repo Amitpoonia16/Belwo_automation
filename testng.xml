@@ -6,6 +6,7 @@
   <class name="Belwoautomation.Loginpagetest"/>
   <class name="Belwoautomation.addclient"/>
   <class name="Belwoautomation.Applications"/>
+  <class name="Belwoautomation.app_actions_testcase"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
