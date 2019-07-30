@@ -31,7 +31,7 @@ public class Applications extends Testbase{
 	@Test
 	public void add_app()
 	{
-		applicationobj.Add_app("added by automation6");
+		applicationobj.Add_app("added by automation10");
 	}
 	
 	@AfterMethod
