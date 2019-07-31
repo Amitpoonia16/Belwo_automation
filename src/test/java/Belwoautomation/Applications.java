@@ -32,7 +32,7 @@ public class Applications extends Testbase {
 	@Test
 	public void add_app() {
 
-		applicationobj.Add_app("test.belwo1");
+		applicationobj.Add_app("test.belwo3");
 
 	}
 

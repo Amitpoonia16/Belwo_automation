@@ -29,9 +29,9 @@ public class addclient extends Testbase{
 	}
 	
 	@Test
-	public void addcliet()
+	public void addclientmtd()
 	{
-		addclient.addclient("testbelwo123", "test321");
+		addclient.addclient("testbelwo1234", "test3211");
 	}
 	
 	@AfterMethod

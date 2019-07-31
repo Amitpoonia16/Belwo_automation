@@ -27,21 +27,13 @@ public class app_actions_testcase extends Testbase {
 	}
 
 	@Test(priority = 1)
-	public void appclone() {
+	public void appclone() throws InterruptedException {
 		appactionobj.clone_app("test_newbelwo5", "123", "123");
-
-	}
-
-	@Test(priority = 3)
-	public void deleteapp() throws InterruptedException {
-		appactionobj.delete_app();
-		Thread.sleep(2000);
-
-	}
-
-	@Test(priority = 2)
-	public void editapp() {
 		appactionobj.editapp("amitnewapp7");
+		appactionobj.delete_app();
+		appactionobj.shortapp();
+		Thread.sleep(1000);
+		appactionobj.changestatus();
 
 	}
 
@@ -52,6 +44,6 @@ public class app_actions_testcase extends Testbase {
 
 	@AfterClass
 	public void closewindow() {
-		driver.quit();
+		// driver.quit();
 	}
 }

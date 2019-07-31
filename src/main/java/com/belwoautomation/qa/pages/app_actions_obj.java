@@ -58,10 +58,31 @@ public class app_actions_obj extends Testbase {
 
 	@FindBy(id = "btnSave")
 	WebElement Save_button;
+	
+	//Application shorting
+	
+	@FindBy(id="ddlClients")	
+	WebElement Client;
+	
+	@FindBy(id="ddlTypes")
+	WebElement Types;
+	
+	@FindBy(id="chkStatus")
+	WebElement Status;
+	
+	@FindBy(xpath="//table[@id=\"grid-table\"]/tbody/tr/td")
+	WebElement result;
+	
+	@FindBy(xpath="//table[@id=\"grid-table\"]/tbody/tr/td[8]/input")
+	WebElement changestatus;
+	
+	@FindBy(xpath="//button[text()=\"OK\"]")
+	WebElement confirm_btn;
 
 	public app_actions_obj() {
 		PageFactory.initElements(driver, this);
 	}
+
 
 	public app_actions_obj clone_app(String name_data, String title_data, String mask_data) {
 		setting_link.click();
@@ -102,6 +123,40 @@ public class app_actions_obj extends Testbase {
 		sLA.selectByIndex(2);
 
 		Save_button.click();
+		return new app_actions_obj();
+	}
+	
+	public app_actions_obj shortapp()
+	{
+		
+		setting_link.click();
+		application_link.click();
+		Select sel_client = new Select(Client);
+		sel_client.selectByVisibleText("Belwo Client");
+		
+		Select processing_Type = new Select(Types);
+		processing_Type.selectByIndex(1);
+		
+		Select status = new Select(Status);
+		status.selectByIndex(0);
+		boolean results=result.isDisplayed();
+		
+		if(results=true)
+		{
+			System.out.println("Test case is passed");
+		}
+		else
+		{
+			System.out.println("Test case is failed");
+		}
+		
+		return new app_actions_obj();
+	}
+
+	public app_actions_obj changestatus()
+	{
+		changestatus.click();
+		confirm_btn.click();
 		return new app_actions_obj();
 	}
 }
