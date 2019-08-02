@@ -18,8 +18,7 @@ public class Testbase {
 	public Testbase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\Workstation-6\\eclipse-workspace\\11\\src"
-					+ "\\main\\java\\com\\belwoautomation\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\BLW-LAPT-101\\eclipse-workspace\\Belwo_automation\\src\\main\\java\\com\\belwoautomation\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

@@ -36,7 +36,11 @@ public class globalsettingtestcase extends Testbase {
 		 * globalsetting.editsetting("new.amit3", "new.test2", "test.abc", "11",
 		 * "belwotest");
 		 */
-		globalsetting.deleteglobalsettingmtd();
+		//globalsetting.deleteglobalsettingmtd();
+		//globalsetting.addNewcomponent("newb.elwo", "newbl.ewo", "test..belwo", "belwtesttetstetteststeetst");
+		//globalsetting.editfile("testamit","belwotest");
+		//globalsetting.editcomponent("newb.elwo", "newbl.ewo", "test..belwo", "belwtesttetstetteststeetst");
+		globalsetting.changestatusmtd();
 		Thread.sleep(1000);
 	}
 

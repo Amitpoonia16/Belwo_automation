@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Belwoautomation.globalsettingtestcase">
+      <class name="Belwoautomation.MessagesandInsertsKeystestcases">
         <methods>
-          <include name="logout"/>
-          <include name="editsettingmtd"/>
-          <include name="addnewsettingwithlocalmtd"/>
           <include name="setup"/>
-          <include name="close"/>
+          <include name="availableKeys"/>
         </methods>
-      </class> <!-- Belwoautomation.globalsettingtestcase -->
+      </class> <!-- Belwoautomation.MessagesandInsertsKeystestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

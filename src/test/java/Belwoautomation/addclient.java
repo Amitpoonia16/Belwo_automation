@@ -32,6 +32,7 @@ public class addclient extends Testbase{
 	public void addclientmtd()
 	{
 		addclient.addclient("testbelwo1234", "test3211");
+		System.out.println("Test");
 	}
 	
 	@AfterMethod
