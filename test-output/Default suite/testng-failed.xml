@@ -5,8 +5,10 @@
     <classes>
       <class name="Belwoautomation.MessagesandInsertsKeystestcases">
         <methods>
+          <include name="logout"/>
           <include name="setup"/>
-          <include name="availableKeys"/>
+          <include name="close"/>
+          <include name="commonshortingmtd"/>
         </methods>
       </class> <!-- Belwoautomation.MessagesandInsertsKeystestcases -->
     </classes>

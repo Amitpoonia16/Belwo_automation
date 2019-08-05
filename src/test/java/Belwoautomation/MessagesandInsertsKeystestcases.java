@@ -10,16 +10,15 @@ import com.belwoautomation.qa.pages.Loginpage;
 import com.belwoautomation.qa.pages.MessagesandInsertsKeysobj;
 import com.belwoautomation.qa.pages.global_settingobj;
 
-public class MessagesandInsertsKeystestcases extends Testbase{
-	
+public class MessagesandInsertsKeystestcases extends Testbase {
+
 	MessagesandInsertsKeysobj MessagesandInsertsKeys;
 	Loginpage login;
-	
-	public MessagesandInsertsKeystestcases()
-	{
+
+	public MessagesandInsertsKeystestcases() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setup() {
 		initialization();
@@ -27,26 +26,43 @@ public class MessagesandInsertsKeystestcases extends Testbase{
 		MessagesandInsertsKeys = new MessagesandInsertsKeysobj();
 		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-	
+
 	@Test
-	public void availableKeys()
-	{
+	public void commonshortingmtd() throws InterruptedException {
 		MessagesandInsertsKeys.messagecommon();
-		MessagesandInsertsKeys.addKeymtd("Amit_belwo_amit");
 		
+		  MessagesandInsertsKeys.shortavailablekeys(); Thread.sleep(1000);
+		
+		  MessagesandInsertsKeys.shortmessageareamtd(); Thread.sleep(1000);
+		  MessagesandInsertsKeys.shortinsertingConfigurationmtd(); Thread.sleep(1000);
+		 
+		 
 	}
-	
+
+	/*
+	 * @Test public void availableKeys() throws InterruptedException {
+	 * MessagesandInsertsKeys.messagecommon();
+	 * 
+	 * MessagesandInsertsKeys.addKeymtd("Amit_belwo_amit"); Thread.sleep(1000);
+	 * 
+	 * MessagesandInsertsKeys.addmessageareamtd("test_belwo1"); Thread.sleep(1000);
+	 * 
+	 * MessagesandInsertsKeys.addInsertsConfigurationsmtd("test_belwo123");
+	 * Thread.sleep(1000);
+	 * 
+	 * }
+	 */
+
 	@AfterMethod
-	public void logout() throws InterruptedException
-	{
-		Thread.sleep(1000);
-		login.logout();
+	public void logout() {
+
+		//login.logout();
 	}
-	
+
 	@AfterClass
-	public void close()
-	{
-		driver.quit();
+	public void close() {
+
+		//driver.close();
 	}
 
 }

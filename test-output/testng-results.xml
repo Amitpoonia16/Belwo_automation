@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-02T20:12:15Z" name="Default suite" finished-at="2019-08-02T20:12:32Z" duration-ms="17088">
+  <suite started-at="2019-08-05T21:36:45Z" name="Default suite" finished-at="2019-08-05T21:37:07Z" duration-ms="22767">
     <groups>
     </groups>
-    <test started-at="2019-08-02T20:12:15Z" name="Default test" finished-at="2019-08-02T20:12:32Z" duration-ms="17088">
+    <test started-at="2019-08-05T21:36:45Z" name="Default test" finished-at="2019-08-05T21:37:07Z" duration-ms="22767">
       <class name="Belwoautomation.MessagesandInsertsKeystestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-02T20:12:15Z" name="setup" finished-at="2019-08-02T20:12:25Z" duration-ms="10231" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:36:45Z" name="setup" finished-at="2019-08-05T21:36:55Z" duration-ms="10068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="availableKeys()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-02T20:12:25Z" name="availableKeys" finished-at="2019-08-02T20:12:29Z" duration-ms="4265" status="PASS">
+        <test-method signature="commonshortingmtd()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:36:55Z" name="commonshortingmtd" finished-at="2019-08-05T21:37:07Z" duration-ms="12681" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- availableKeys -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-02T20:12:29Z" name="logout" finished-at="2019-08-02T20:12:31Z" duration-ms="1901" status="PASS">
+        </test-method> <!-- commonshortingmtd -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:37:07Z" name="logout" finished-at="2019-08-05T21:37:07Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-02T20:12:31Z" name="close" finished-at="2019-08-02T20:12:32Z" duration-ms="675" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:37:07Z" name="close" finished-at="2019-08-05T21:37:07Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
