@@ -30,39 +30,42 @@ public class MessagesandInsertsKeystestcases extends Testbase {
 	@Test
 	public void commonshortingmtd() throws InterruptedException {
 		MessagesandInsertsKeys.messagecommon();
-		
-		  MessagesandInsertsKeys.shortavailablekeys(); Thread.sleep(1000);
-		
-		  MessagesandInsertsKeys.shortmessageareamtd(); Thread.sleep(1000);
-		  MessagesandInsertsKeys.shortinsertingConfigurationmtd(); Thread.sleep(1000);
-		 
-		 
+
+		MessagesandInsertsKeys.shortavailablekeys();
+		Thread.sleep(1000);
+
+		MessagesandInsertsKeys.shortmessageareamtd();
+		Thread.sleep(1000);
+		MessagesandInsertsKeys.shortinsertingConfigurationmtd();
+		Thread.sleep(1000);
+
 	}
 
-	/*
-	 * @Test public void availableKeys() throws InterruptedException {
-	 * MessagesandInsertsKeys.messagecommon();
-	 * 
-	 * MessagesandInsertsKeys.addKeymtd("Amit_belwo_amit"); Thread.sleep(1000);
-	 * 
-	 * MessagesandInsertsKeys.addmessageareamtd("test_belwo1"); Thread.sleep(1000);
-	 * 
-	 * MessagesandInsertsKeys.addInsertsConfigurationsmtd("test_belwo123");
-	 * Thread.sleep(1000);
-	 * 
-	 * }
-	 */
+	@Test
+	public void availableKeys() throws InterruptedException {
+		MessagesandInsertsKeys.messagecommon();
+
+		MessagesandInsertsKeys.addKeymtd("Amit_belwo_amit");
+		Thread.sleep(1000);
+
+		MessagesandInsertsKeys.addmessageareamtd("test_belwo1");
+		Thread.sleep(1000);
+
+		MessagesandInsertsKeys.addInsertsConfigurationsmtd("test_belwo123");
+		Thread.sleep(1000);
+
+	}
 
 	@AfterMethod
 	public void logout() {
 
-		//login.logout();
+		login.logout();
 	}
 
 	@AfterClass
 	public void close() {
 
-		//driver.close();
+		driver.close();
 	}
 
 }

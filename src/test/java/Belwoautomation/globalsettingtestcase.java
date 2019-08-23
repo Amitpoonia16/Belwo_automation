@@ -1,5 +1,7 @@
 package Belwoautomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -27,31 +29,36 @@ public class globalsettingtestcase extends Testbase {
 	}
 
 	@Test
-	public void addnewsetting() throws InterruptedException {
+	public void addnewsetting() throws InterruptedException {		
 		globalsetting.globalcommon();
-		/*
-		 * globalsetting.addNewSettingmtd("new.amit1", "new.test1", "test.abc", "11",
-		 * "belwotest");
-		 * globalsetting.addNewSettingwithlocalfilesystemmtd("name.amit3");
-		 * globalsetting.editsetting("new.amit3", "new.test2", "test.abc", "11",
-		 * "belwotest");
-		 */
-		//globalsetting.deleteglobalsettingmtd();
-		//globalsetting.addNewcomponent("newb.elwo", "newbl.ewo", "test..belwo", "belwtesttetstetteststeetst");
-		//globalsetting.editfile("testamit","belwotest");
+		Thread.sleep(1000);
+		globalsetting.addNewSettingmtd("new.amit1", "new.test1", "test.abc", "11", "belwotest");
+		Thread.sleep(1000);
+		globalsetting.addNewSettingwithlocalfilesystemmtd("name.amit3");
+		Thread.sleep(1000);
+		globalsetting.editsetting("new.amit3", "new.test2", "test.abc", "11", "belwotest");
+		Thread.sleep(1000);
+		globalsetting.deleteglobalsettingmtd();
+		Thread.sleep(1000);
+		globalsetting.addNewcomponent("newb.elwo", "newbl.ewo", "test..belwo", "belwtesttetstetteststeetst");
+		Thread.sleep(1000);
+		globalsetting.editfile("testamit", "belwotest");
+		Thread.sleep(1000);
 		globalsetting.editcomponent("newb.elwo", "newbl.ewo", "test..belwo", "belwtesttetstetteststeetst");
+		Thread.sleep(1000);
 		globalsetting.changestatusmtd();
 		Thread.sleep(1000);
+
 	}
 
 	@AfterMethod
 	public void logout() {
-		 login.logout();
+		login.logout();
 	}
 
 	@AfterClass
 	public void close() {
-		 driver.close();
+		driver.close();
 	}
 
 }

@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Belwoautomation.MessagesandInsertsKeystestcases">
+      <class name="Validationmessagestestcases.reports">
         <methods>
-          <include name="logout"/>
-          <include name="setup"/>
-          <include name="close"/>
-          <include name="commonshortingmtd"/>
+          <include name="mtd1"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Belwoautomation.MessagesandInsertsKeystestcases -->
+      </class> <!-- Validationmessagestestcases.reports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

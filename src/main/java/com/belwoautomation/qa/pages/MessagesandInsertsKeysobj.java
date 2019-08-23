@@ -111,11 +111,13 @@ public class MessagesandInsertsKeysobj extends Testbase {
 
 	@FindBy(xpath = "//*[@name=\"customHouseholdingMetadataTbl_length\"]")
 	WebElement displayrecordssize;
-	
-	@FindBy(name="tblMessageArea_length")
+
+	@FindBy(name = "tblMessageArea_length")
 	WebElement messageareashort;
-	@FindBy(name="tblInsertsConfigurations_length")
+	@FindBy(name = "tblInsertsConfigurations_length")
 	WebElement messageareashort1;
+
+	
 
 	public MessagesandInsertsKeysobj() {
 		PageFactory.initElements(driver, this);

@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-05T21:36:45Z" name="Default suite" finished-at="2019-08-05T21:37:07Z" duration-ms="22767">
+  <suite started-at="2019-08-23T21:27:58Z" name="Default suite" finished-at="2019-08-23T21:28:15Z" duration-ms="17386">
     <groups>
     </groups>
-    <test started-at="2019-08-05T21:36:45Z" name="Default test" finished-at="2019-08-05T21:37:07Z" duration-ms="22767">
-      <class name="Belwoautomation.MessagesandInsertsKeystestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:36:45Z" name="setup" finished-at="2019-08-05T21:36:55Z" duration-ms="10068" status="PASS">
+    <test started-at="2019-08-23T21:27:58Z" name="Default test" finished-at="2019-08-23T21:28:15Z" duration-ms="17386">
+      <class name="Validationmessagestestcases.messages_inserts">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Validationmessagestestcases.messages_inserts@3e96bacf]" started-at="2019-08-23T21:27:58Z" name="setUp" finished-at="2019-08-23T21:28:08Z" duration-ms="10176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="commonshortingmtd()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:36:55Z" name="commonshortingmtd" finished-at="2019-08-05T21:37:07Z" duration-ms="12681" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="valmsgmtd()[pri:0, instance:Validationmessagestestcases.messages_inserts@3e96bacf]" started-at="2019-08-23T21:28:08Z" name="valmsgmtd" finished-at="2019-08-23T21:28:12Z" duration-ms="3969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- commonshortingmtd -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:37:07Z" name="logout" finished-at="2019-08-05T21:37:07Z" duration-ms="0" status="PASS">
+        </test-method> <!-- valmsgmtd -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Validationmessagestestcases.messages_inserts@3e96bacf]" started-at="2019-08-23T21:28:12Z" name="logout" finished-at="2019-08-23T21:28:13Z" duration-ms="1149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Belwoautomation.MessagesandInsertsKeystestcases@fd07cbb]" started-at="2019-08-05T21:37:07Z" name="close" finished-at="2019-08-05T21:37:07Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Validationmessagestestcases.messages_inserts@3e96bacf]" started-at="2019-08-23T21:28:13Z" name="closebrowser" finished-at="2019-08-23T21:28:15Z" duration-ms="2072" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- Belwoautomation.MessagesandInsertsKeystestcases -->
+        </test-method> <!-- closebrowser -->
+      </class> <!-- Validationmessagestestcases.messages_inserts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

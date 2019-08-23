@@ -1,4 +1,4 @@
-package Belwoautomation;
+package Validationmessagestestcases;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -6,16 +6,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.belwoautomation.qa.base.Testbase;
-import com.belwoautomation.qa.pages.Applications_obj;
 import com.belwoautomation.qa.pages.Loginpage;
-import com.belwoautomation.qa.pages.addclient_obj;
 
-public class Applications extends Testbase {
+import Validationmessages.addapplicationsobjn;
+import Validationmessages.addclientobjn;
 
-	Applications_obj applicationobj;
+public class addapplicationn extends Testbase {
+
+	addapplicationsobjn addapplications;
 	Loginpage login;
 
-	public Applications() {
+	public addapplicationn() {
 		super();
 	}
 
@@ -24,25 +25,25 @@ public class Applications extends Testbase {
 
 		initialization();
 
-		applicationobj = new Applications_obj();
+		addapplications = new addapplicationsobjn();
 		login = new Loginpage();
 		login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test
-	public void add_app() {
-
-		applicationobj.Add_app("test.belwo4");
-
+	public void appvalmtd() {
+		addapplications.addapplicationvalmtd();
 	}
-
+	
 	@AfterMethod
-	public void logout() {
+	public void logout() throws InterruptedException
+	{
+		Thread.sleep(1000);
 		login.logout();
 	}
-
 	@AfterClass
-	public void closewindow() {
+	public void closebrowser()
+	{
 		driver.close();
 	}
 

@@ -32,7 +32,7 @@ public class Applications_obj extends Testbase{
 	
 	@FindBy(id="btnSave")
 	WebElement Save_button;
-	
+
 	public Applications_obj() {
 		PageFactory.initElements(driver, this);
 	}

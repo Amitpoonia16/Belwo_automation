@@ -23,7 +23,7 @@ public class amazon {
 		serach.sendKeys("shoes");
 		serach.sendKeys(Keys.ENTER);
 	java.util.List<WebElement> badge=	driver.findElements(By.linkText("Best seller"));
-	
+
 	System.out.println(badge.size());
 	}
 
